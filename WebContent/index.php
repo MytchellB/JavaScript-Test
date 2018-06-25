@@ -1,0 +1,1 @@
+<?php header( 'Location: C:\Users\Mytchell\JavaScript\myJavaScript\JavaScript-Test\WebContent\index.html' ) ;  ?>
