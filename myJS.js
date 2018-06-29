@@ -108,3 +108,34 @@ function generateStringId(){
 	}
 	document.getElementById("identityMatrix").innerHTML = randomString;
 }
+
+function binarySearch(){
+	var searchValue = document.getElementById("mySearch").value;
+	var myArray = document.getElementById("myArray").value.split(' ').sort();
+	var i;
+	var mid = myArray.length /2;
+	var high;
+	var low;
+	var foundIt;
+	while ( searchValue < mid){
+		high = mid-1;
+		mid = high/2;
+		if ( searchValue == mid){
+			foundIt = mid;
+			break;
+		}
+	}
+	while ( searchValue > mid){
+		high = myArray.length-1;
+		low = mid;
+		mid = (high+low)/2;
+		if ( searchValue == mid){
+			foundIt = mid;
+			break;
+		}
+	}
+	if ( searchValue == mid){
+		foundIt = mid;
+		alert(foundIt);
+	}
+}
