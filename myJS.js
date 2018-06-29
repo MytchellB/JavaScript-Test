@@ -98,3 +98,13 @@ function createIdentityMatrix(){
 		document.getElementById("identityMatrix").innerHTML += '<br>';
 	}
 }
+
+function generateStringId(){
+	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split('');
+	var i;
+	var randomString = "";
+	for ( i=0; i < document.getElementById("myNum").value; i++){
+		randomString += possible[Math.floor(Math.random() * 63)];
+	}
+	document.getElementById("identityMatrix").innerHTML = randomString;
+}
