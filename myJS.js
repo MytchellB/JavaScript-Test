@@ -65,3 +65,18 @@ function alphabetizeLetters(){
 	alert(sentence);
 	document.getElementById("wordCombo").innerHTML = sentence.split('').sort().join('');
 }
+
+function findLargestWord(){
+	var sentence = document.getElementById("myWord").value;
+	var words = sentence.split(' ');	
+	var i;
+	var maxLength = -999;
+	var largestWord = "No Word";
+	for ( i = 0; i < words.length; i++){
+		if ( words[i].length > maxLength){
+			maxLength = words[i].length;
+			largestWord = words[i];
+		}
+	}
+	document.getElementById("wordCombo").innerHTML = "Largest Word: " + largestWord;
+}
