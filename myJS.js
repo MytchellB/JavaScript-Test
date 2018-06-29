@@ -46,10 +46,14 @@ function wordCombinations() {
 
 function upperCaseLetters() {
 	var sentence = document.getElementById("myWord").value;
-	document.getElementById("wordCombo").innerHTML += sentence.charAt(0).toUpperCase() + sentence.slice(1);
+	alert(sentence);
 	if (sentence.indexOf(" ") > -1){
+		document.getElementById("wordCombo").innerHTML += sentence.charAt(0).toUpperCase() + sentence.slice(1, sentence.indexOf(" ") +1);
 		document.getElementById("myWord").value = sentence.slice(sentence.indexOf(" ")+1);
 		upperCaseLetters();
+	}
+	else{
+		document.getElementById("wordCombo").innerHTML += sentence.charAt(0).toUpperCase() + sentence.slice(1);
 	}
 }
 
