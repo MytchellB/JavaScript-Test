@@ -27,3 +27,19 @@ function myFunction2() {
 function myFunction3() {
 	document.getElementById("demo2").innerHTML = daylist[day] + hour + ":" + minute + ":" + second;
 }
+
+function wordCombinations() {
+	document.getElementById("wordCombo").innerHTML = "";
+	var word = document.getElementById("myWord").value;
+	var i;
+	for ( i = 0; i < word.length; i++){
+		document.getElementById("wordCombo").innerHTML += word[i] + ", ";
+		if ( i < word.length-1){
+			document.getElementById("wordCombo").innerHTML += word[i] + word[i+1] + ", ";
+		}
+	}
+	for ( i = 0; i < Math.floor(word.length/2); i++){
+		document.getElementById("wordCombo").innerHTML += word[i] + word[word.length-1-i] + ", ";
+	}
+	document.getElementById("wordCombo").innerHTML += word;
+}
