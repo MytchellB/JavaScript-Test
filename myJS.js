@@ -80,3 +80,21 @@ function findLargestWord(){
 	}
 	document.getElementById("wordCombo").innerHTML = "Largest Word: " + largestWord;
 }
+
+function createIdentityMatrix(){
+	document.getElementById("identityMatrix").innerHTML = '';
+	var nums = document.getElementById("myNum").value.split(" "); // rows[0] by columns[1]
+	var i;
+	var j;
+	for ( i=0; i < nums[0]; i++){
+		for( j=0; j < nums[1]; j++){
+			if ( i == j ){
+				document.getElementById("identityMatrix").innerHTML += "1 ";
+			}
+			else{
+				document.getElementById("identityMatrix").innerHTML += "0 ";
+			}
+		} 
+		document.getElementById("identityMatrix").innerHTML += '<br>';
+	}
+}
