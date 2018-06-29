@@ -43,3 +43,16 @@ function wordCombinations() {
 	}
 	document.getElementById("wordCombo").innerHTML += word;
 }
+
+function upperCaseLetters() {
+	var sentence = document.getElementById("myWord").value;
+	document.getElementById("wordCombo").innerHTML += sentence.charAt(0).toUpperCase() + sentence.slice(1);
+	if (sentence.indexOf(" ") > -1){
+		document.getElementById("myWord").value = sentence.slice(sentence.indexOf(" ")+1);
+		upperCaseLetters();
+	}
+}
+
+function clearWord() {
+	document.getElementById("wordCombo").innerHTML = "";
+}
