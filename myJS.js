@@ -46,7 +46,6 @@ function wordCombinations() {
 
 function upperCaseLetters() {
 	var sentence = document.getElementById("myWord").value;
-	alert(sentence);
 	if (sentence.indexOf(" ") > -1){
 		document.getElementById("wordCombo").innerHTML += sentence.charAt(0).toUpperCase() + sentence.slice(1, sentence.indexOf(" ") +1);
 		document.getElementById("myWord").value = sentence.slice(sentence.indexOf(" ")+1);
@@ -59,4 +58,10 @@ function upperCaseLetters() {
 
 function clearWord() {
 	document.getElementById("wordCombo").innerHTML = "";
+}
+
+function alphabetizeLetters(){
+	var sentence = document.getElementById("myWord").value;
+	alert(sentence);
+	document.getElementById("wordCombo").innerHTML = sentence.split('').sort().join('');
 }
