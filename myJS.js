@@ -112,30 +112,28 @@ function generateStringId(){
 function binarySearch(){
 	var searchValue = document.getElementById("mySearch").value;
 	var myArray = document.getElementById("myArray").value.split(' ').sort();
+	binarySearch2(myArray, searchValue);
+}
+
+function binarySearch2(myArray, searchValue){
 	var i;
-	var mid = myArray.length /2;
+	var mid = Math.floor(myArray.length/2);
 	var high;
 	var low;
 	var foundIt;
-	while ( searchValue < mid){
-		high = mid-1;
-		mid = high/2;
-		if ( searchValue == mid){
-			foundIt = mid;
-			break;
-		}
+	if (searchValue == myArray[mid]){
+		foundIt = myArray[mid];
+		alert("Found it: " + foundIt);
 	}
-	while ( searchValue > mid){
-		high = myArray.length-1;
-		low = mid;
-		mid = (high+low)/2;
-		if ( searchValue == mid){
-			foundIt = mid;
-			break;
-		}
+	else if (myArray.length == 1) {
+		alert("Value not found");
 	}
-	if ( searchValue == mid){
-		foundIt = mid;
-		alert(foundIt);
+	else if ( searchValue > myArray[mid]){
+		myArray = myArray.slice(mid+1);
+		binarySearch2(myArray, searchValue);
+	}
+	else{
+		myArray = myArray.slice(0, mid);
+		binarySearch2(myArray, searchValue);
 	}
 }
