@@ -144,6 +144,5 @@ function doubleFunction(secondFunc){
 
 function secondFunction(){
 	alert("Hello");
+	document.getElementById("hello").innerHTML = "Hi";
 }
-
-doubleFunction(secondFunction);
