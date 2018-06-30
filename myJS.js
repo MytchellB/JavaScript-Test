@@ -137,3 +137,13 @@ function binarySearch2(myArray, searchValue){
 		binarySearch2(myArray, searchValue);
 	}
 }
+
+function doubleFunction(secondFunc){
+	secondFunc();
+}
+
+function secondFunction(){
+	alert("Hello");
+}
+
+doubleFunction(secondFunction);
