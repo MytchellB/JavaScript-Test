@@ -1,4 +1,3 @@
-
 var myStop;
 var today = new Date();
 var day = today.getDay();
@@ -164,7 +163,19 @@ function changeOtterPicture(){
 		document.getElementById("otterPic").src="pics/otter2.jpg";
 		otterPicStatus = 1;
 	}
-	else{
+	else if( otterPicStatus == 1){
+		document.getElementById("otterPic").src="pics/otter3.jpg";
+		otterPicStatus = 2;
+	}
+	else if( otterPicStatus == 2){
+		document.getElementById("otterPic").src="pics/otter4.jpg";
+		otterPicStatus = 3;
+	}
+	else if( otterPicStatus == 3){
+		document.getElementById("otterPic").src="pics/otter5.jpg";
+		otterPicStatus = 4;
+	}
+	else {
 		otterPicStatus = 0;
 		document.getElementById("otterPic").src="pics/otter.jpg";
 	}
