@@ -4,3 +4,22 @@ body {
     background-color: lightblue;
     text-align: center;
 }
+
+.otterPic {
+	float:left;
+}
+.container {
+	position:relative;	
+}
+.otterButton {
+	
+}
+#myOtterButton{
+	float:left;
+	position:relative;
+	margin-top:180px;
+}
+
+.clearfix{
+    clear:both
+}

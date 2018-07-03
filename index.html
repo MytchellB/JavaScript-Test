@@ -8,11 +8,20 @@
 
 <script src="myJS.js"></script> 
 
-<p>
-<img src="otter.jpg" alt="Otter Picture">
-</p>
- 
 <body>
+
+<div class ="otterPic">
+<img id="otterPic" src="otter.jpg" alt="Otter Picture" width="500" height="354">
+</div>
+
+<div class ="container">
+	<div class ="otterButton">
+		<button type="button" onclick="changeOtterPicture()" id="myOtterButton">Change Otter Picture</button>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+
 <p id="demo">w3resource </p>
 <p id="demo2"></p>
 
@@ -30,6 +39,7 @@ Enter Word:
 <button type="button" onclick="alphabetizeLetters()">Alphabetize Letters</button>
 <button type="button" onclick="findLargestWord()">Find Largest Word</button>
 </body><br><br>
+
 <p>Enter two numbers(or 1 for Random String Generation): </p>
 <input type="text" id="myNum" value=>
 <p id="identityMatrix"> </p>
@@ -39,6 +49,7 @@ Enter Word:
 <p>Enter number to search for: </p><input type="text" id="mySearch" value=>
 <p id="binarySearch"> </p>
 <button type="button" onclick="binarySearch()">Search array for value</button>
+
 <button type="button" onclick="doubleFunction(secondFunction)">Click to say Hi</button>
 <p id="hello"> </p>
 <p id="factorial">Enter number to find factorial of: </p>

@@ -9,6 +9,7 @@ var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Sat
 var hour = today.getHours();
 var minute = today.getMinutes();
 var second = today.getSeconds();
+var otterPicStatus = 0;
 
 function myFunction() {
 	myStop = setInterval( myLooper, 300);	
@@ -158,5 +159,16 @@ function factorial(number){
 	}
 	else{
 		return factorial(number-1) * number;
+	}
+}
+
+function changeOtterPicture(){
+	if (otterPicStatus == 0){
+		document.getElementById("otterPic").src="otter2.jpg";
+		otterPicStatus = 1;
+	}
+	else{
+		otterPicStatus = 0;
+		document.getElementById("otterPic").src="otter.jpg";
 	}
 }
