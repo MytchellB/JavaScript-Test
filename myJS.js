@@ -164,11 +164,11 @@ function factorial(number){
 
 function changeOtterPicture(){
 	if (otterPicStatus == 0){
-		document.getElementById("otterPic").src="otter2.jpg";
+		document.getElementById("otterPic").src="pics/otter2.jpg";
 		otterPicStatus = 1;
 	}
 	else{
 		otterPicStatus = 0;
-		document.getElementById("otterPic").src="otter.jpg";
+		document.getElementById("otterPic").src="pics/otter.jpg";
 	}
 }

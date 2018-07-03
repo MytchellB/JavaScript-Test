@@ -7,7 +7,7 @@ body {
 
 .otterContainer {
 	margin: 0 auto;
-	width: 800px; 
+	width: 650px; 
 }
 .otterPic {
 	float:left;
@@ -15,13 +15,17 @@ body {
 .container {
 	position:relative;	
 }
-.otterButton {
-	
-}
+
 #myOtterButton{
 	float:left;
 	position:relative;
 	margin-top:180px;
+	color: white;
+	background-color: blue;
+}
+
+#demo {
+	color: darkred;
 }
 
 .clearfix{
