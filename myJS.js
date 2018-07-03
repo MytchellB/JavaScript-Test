@@ -1,6 +1,3 @@
-/**
- * 
- */
 
 var myStop;
 var today = new Date();
