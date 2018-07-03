@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+.otterContainer {
+	margin: 0 auto;
+	width: 800px; 
+}
 .otterPic {
 	float:left;
 }
