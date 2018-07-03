@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>hello, world!</title>
+<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <script src="myJS.js"></script> 
@@ -21,11 +22,11 @@
 
 <body><br><br>
 Enter Word: 
-<input type="text" id="myWord" value=""><br>
-<p id="wordCombo"> </p>
+<input type="text" id="myWord" value="">
+<p id="wordCombo"></p>
+<button type="button" onclick="clearWord()">Clear Word</button>
 <button type="button" onclick="wordCombinations()">Find all combinations of word</button>
 <button type="button" onclick="upperCaseLetters()">Capitalize all first letters of a sentence</button>
-<button type="button" onclick="clearWord()">Clear Word</button>
 <button type="button" onclick="alphabetizeLetters()">Alphabetize Letters</button>
 <button type="button" onclick="findLargestWord()">Find Largest Word</button>
 </body><br><br>
