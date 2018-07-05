@@ -3,6 +3,7 @@
 body {
     background-color: lightblue;
     text-align: center;
+    font-size:3.5vw;
 }
 
 .otterContainer {
@@ -22,6 +23,8 @@ body {
 	margin-top:180px;
 	color: white;
 	background-color: blue;
+	width: 20%;
+	height: 20%;
 }
 
 #demo {
