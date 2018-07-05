@@ -6,3 +6,11 @@ body {
     font-size:3.5vw;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+#sumArrayButton {
+	cursor: pointer;
+}
+
+#numberRangeButton {
+	cursor: pointer;
+}
