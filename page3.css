@@ -8,7 +8,34 @@ body {
 }
 
 p {
-	
+	width: 70%;
+	margin: auto;
+	background-color: lightblue;
+}
+
+p.one {
+	width: 500px;
+	margin: auto;
+	background-color: lightblue;
+	display: none;
+}
+
+p.two {
+	width: 500px;
+	margin: auto;
+	background-color: lightblue;
+	display: none;
+}
+
+p.three {
+	width: 85%;
+	margin: auto;
+	background-color: lightblue;
+}
+
+a {
+	border-style: solid;
+	background-color: lightblue;
 }
 
 #sumArrayButton {

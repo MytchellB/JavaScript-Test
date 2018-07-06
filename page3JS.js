@@ -11,6 +11,7 @@ function findNumberRange(){
 
 function findingNumberRange(x, y){
 	if ( x == y-1){
+		document.getElementById("numberRangeResult").style.display = "block";
 		document.getElementById("numberRangeResult").innerHTML += x;
 		return x;
 	}
@@ -25,13 +26,12 @@ function findArraySum(){
 	document.getElementById("sumArrayResult").innerHTML = " ";
 	var myArray2 = document.getElementById("mySumArray").value.split(" ");
 	var myArray = myArray2.map(Number);
-//	alert(myArray);
-//	alert(myArray2);
 	findingArraySum(myArray);
 }
 
 function findingArraySum(myArray){
 	if ( myArray.length == 0){
+		document.getElementById("sumArrayResult").style.display = "block";
 		document.getElementById("sumArrayResult").innerHTML = "Sum of all numbers in Array: " + myArraySum;
 		myArraySum = 0;
 		return 0;
