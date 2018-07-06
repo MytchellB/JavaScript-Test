@@ -50,6 +50,22 @@ a {
 	background-color: lightblue;
 }
 
+i {
+	color:black;
+}
+
+#nOne {
+	font-size:64px;
+}
+
+#nTwo {
+	font-size:48px;
+}
+
+#nThree {
+	font-size:48px;
+}
+
 #sumArrayButton {
 	cursor: pointer;
 }
