@@ -3,7 +3,7 @@
 body {
     background-image: url("pics/waterBG.jpg");
     text-align: center;
-    font-size:3vw;
+    font-size:2.5vw;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     padding: 50px;
 }
@@ -23,6 +23,11 @@ p {
 	background-color: lightblue;
 }
 
+input:focus {
+	background-color: black;
+	color: white;
+}
+
 p.one {
 	width: 500px;
 	margin: auto;
@@ -40,8 +45,13 @@ p.two {
 p.three {
 	padding: 15px;
 	width: 85%;
-	margin: auto;
+	margin-top: 20px;
 	background-color: lightblue;
+}
+
+a:hover {
+	color: black;
+	background-color: white;
 }
 
 a {
