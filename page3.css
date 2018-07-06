@@ -5,6 +5,16 @@ body {
     text-align: center;
     font-size:3vw;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 50px;
+}
+
+input {
+	margin: 50px;
+	font-size:2vw;
+}
+
+button {
+	font-size:2vw;
 }
 
 p {
@@ -28,12 +38,14 @@ p.two {
 }
 
 p.three {
+	padding: 15px;
 	width: 85%;
 	margin: auto;
 	background-color: lightblue;
 }
 
 a {
+	padding: 5px;
 	border-style: solid;
 	background-color: lightblue;
 }
