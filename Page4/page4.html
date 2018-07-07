@@ -7,13 +7,15 @@
 <script src="page4JS.js"></script> 
 </head>
 
-<body>
+<body id="mainBody">
+
+<p>hi</p>
 
 <div>
-<select>
-<option value="place1">Place 1</option>
-<option value="place2">Place 2</option>
-<option value="place3">Place 3</option>
+<select name="chooseBG" onchange="changeBG(this.value)">
+<option value="blackBG" onchange="blackBG()" id="selectBlackBG">Black BG</option>
+<option value="whiteBG"onchange="whiteBG()" id="selectWhiteBG">White BG</option>
+<option value="blueBG"onchange="blueBG()" id="selectBlueBG">Blue BG</option>
 </select>
 </div>
 
