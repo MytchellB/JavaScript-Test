@@ -11,6 +11,7 @@
 			$(".to").hide();
 		    $("#hello").click(function(){
 		        $(this).hide(4000, function(){
+		        	$(".myDiv4").fadeIn("slow");
 		            $("#to").fadeIn(2000);
 		            $("#website").fadeIn(4000);
 		        });
@@ -22,6 +23,13 @@
 			});
 		});
 	</script>
+	<style>
+	div.myDiv4 {
+		margin: auto;
+		width: 20%;
+		text-align: center;
+	}
+	</style>
 </head>
 
 	<body id="mainBody">
@@ -38,11 +46,12 @@
 			<p id="hello">hello, world</p>
 		</div>
 		
-		<div class="mydiv4">
-			<p id="welcome">Welcome</p>
-			<p id="to" style="display:none;">to</p>
-			<p id="website" style="display:none;">a web site</p>
-		</div>
+			<div class="myDiv4">
+				<p id="welcome">Welcome</p>
+				<p id="to" style="display:none;">to</p>
+				<p id="website" style="display:none;">a website</p>
+				
+			</div>
 	
 	<div class="myDiv1">
 		<a href="../index.html">Go to Home Page</a>
