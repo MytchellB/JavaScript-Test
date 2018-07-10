@@ -8,8 +8,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		    $("p").click(function(){
-		        $(this).hide(4000);
+			$(".to").hide();
+		    $("#hello").click(function(){
+		        $(this).hide(4000, function(){
+		            $("#to").fadeIn(2000);
+		            $("#website").fadeIn(4000);
+		        });
 		    });
 		});
 		$(function(){
@@ -31,7 +35,13 @@
 		</div>
 	
 		<div class="myDiv2">
-			<p>hello, world</p>
+			<p id="hello">hello, world</p>
+		</div>
+		
+		<div class="mydiv4">
+			<p id="welcome">Welcome</p>
+			<p id="to" style="display:none;">to</p>
+			<p id="website" style="display:none;">a web site</p>
 		</div>
 	
 	<div class="myDiv1">
