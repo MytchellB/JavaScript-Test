@@ -9,8 +9,13 @@
 	<script>
 		$(document).ready(function(){
 		    $("p").click(function(){
-		        $(this).hide();
+		        $(this).hide(4000);
 		    });
+		});
+		$(function(){
+			$("#BGChanger").click(function(){
+				
+			});
 		});
 	</script>
 </head>
@@ -18,7 +23,7 @@
 	<body id="mainBody">
 	
 		<div class="myDiv3">
-			<select name="chooseBG" onchange="changeBG(this.value)">
+			<select name="chooseBG" onchange="changeBG(this.value)" id="BGChanger">
 				<option value="blackBG">Black BG</option>
 				<option value="whiteBG">White BG</option>
 				<option value="blueBG">Blue BG</option>
