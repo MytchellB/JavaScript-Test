@@ -38,6 +38,14 @@
 					break;
 			}
 		}
+			
+		function blink_text() {
+			$('.blinkText').fadeOut(1500);
+			$('.blinkText').fadeIn(1500);
+		}
+		setInterval(blink_text, 1000);
+		
+		
 	</script>
 	<style>
 	div.myDiv4 {
@@ -55,7 +63,7 @@
 	a {
 		animation-name: glow;
 		animation-duration: 2s;
-		animation-direction: alternate;
+		animation-direction: alternate-reverse;
 		animation-iteration-count: infinite;
 	}
 	
@@ -87,6 +95,8 @@
 				<p id="website" style="display:none;">a website</p>
 				
 			</div>
+			
+		<p> BUY <span class="blinkText">FOOD</span> NOW</p>
 	
 	<div class="myDiv1">
 		<a href="../index.html">Go to Home Page</a>
