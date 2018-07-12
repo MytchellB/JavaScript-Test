@@ -8,6 +8,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
+			$("#mainBody").fadeIn(2000);
+			$(".myDiv1").fadeIn(1500);
 			$(".to").hide();
 		    $("#hello").click(function(){
 		        $(this).hide(4000, function(){
@@ -92,7 +94,7 @@
 	</style>
 </head>
 
-	<body id="mainBody">
+	<body id="mainBody" style="display:none;">
 	
 		<div class="myDiv3">
 			<select name="chooseBG" onchange="changeBG(this.value)" id="BGChanger">
@@ -143,7 +145,7 @@
 		</table>
 	</div>
 	
-	<div class="myDiv1">
+	<div class="myDiv1" style="display:none;">
 		<a href="../index.html">Go to Home Page</a>
 	</div>
 	
