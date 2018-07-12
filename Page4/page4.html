@@ -47,6 +47,9 @@
 		}
 		setInterval(blink_text, 1000);
 		
+		function displayTable() {
+			$(".myTable").toggle();
+		}
 		
 	</script>
 	<style>
@@ -120,29 +123,34 @@
 	
 	
 	<div class="myDivTable" style="padding-top: 50px;">
-		<table style="margin: 0px auto;">
-		<caption>This is a Table of Stuff</caption>
-			<tr>
-				<th>Company</th>
-				<th>Contact</th>
-				<th>Country</th>
-			</tr>
-			<tr>
-				<td>Alfreds Futterkiste</td>
-				<td>Maria Anders</td>
-				<td>Germany</td>
-			</tr>
-			<tr>
-				<td>Centro comercial Moctezuma</td>
-				<td>Francisco Chang</td>
-				<td>Mexico</td>
-			</tr>
-			<tr>
-				<td>Ernst Handel</td>
-				<td>Roland Mendel</td>
-				<td>Austria</td>
-			</tr>
-		</table>
+		<div class="displayMyTable" style="padding-bottom: 20px;">
+			<button type="button" onclick="displayTable()" id="displayTableButton">Display Data Table</button>
+		</div>
+		<div class="myTable" style="display: none;">
+			<table style="margin: 0px auto;">
+			<caption>This is a Table of Stuff</caption>
+				<tr>
+					<th>Company</th>
+					<th>Contact</th>
+					<th>Country</th>
+				</tr>
+				<tr>
+					<td>Alfreds Futterkiste</td>
+					<td>Maria Anders</td>
+					<td>Germany</td>
+				</tr>
+				<tr>
+					<td>Centro comercial Moctezuma</td>
+					<td>Francisco Chang</td>
+					<td>Mexico</td>
+				</tr>
+				<tr>
+					<td>Ernst Handel</td>
+					<td>Roland Mendel</td>
+					<td>Austria</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	
 	<div class="myDiv1" style="display:none;">
