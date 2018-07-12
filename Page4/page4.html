@@ -47,8 +47,18 @@
 		}
 		setInterval(blink_text, 1000);
 		
+		var o = 0;
+		
 		function displayTable() {
-			$(".myTable").toggle();
+			if (o == 0){
+				$(".myTable").fadeTo(750, 1);
+				o = 1;
+			}
+			else {
+				$(".myTable").fadeTo(750, 0);
+				o = 0;
+			}
+			
 		}
 		
 	</script>
