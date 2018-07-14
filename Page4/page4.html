@@ -10,6 +10,8 @@
 		$(document).ready(function(){
 			$("#mainBody").fadeIn(2000);
 			$(".myDiv1").fadeIn(1500);
+			$("#restaurant").fadeIn(1500);
+			$("#restaurant2").fadeIn(1500);
 			$(".to").hide();
 		    $("#hello").click(function(){
 		        $(this).hide(4000, function(){
@@ -109,12 +111,14 @@
 
 	<body id="mainBody" style="display:none;">
 	
-		<div class="pic1">
-			<img id="restaurant" src="../pics/page4-pic1.jpg" alt="Restaurant" width="30%" height="30%" style="position: fixed; right: 0; padding-right: 10px;">
+		<div id="pic1">
+			<img id="restaurant" src="../pics/page4-pic1.jpg" alt="Restaurant" width="30%" height="30%" style="position: fixed; right: 0; padding-right: 10px; display: none;">
+			<div>
+			</div>
 		</div>
 		
-		<div class="pic2">
-			<img id="restaurant2" src="../pics/page4-pic2.jpg" alt="Restaurant 2" width="30%" height="30%" style="position: fixed; left: 0; padding-left: 10px;">
+		<div id="pic2">
+			<img id="restaurant2" src="../pics/page4-pic2.jpg" alt="Restaurant 2" width="30%" height="30%" style="position: fixed; left: 0; padding-left: 10px; display: none;">
 		</div>
 	
 		<div class="myDiv3">
